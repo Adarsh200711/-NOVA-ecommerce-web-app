@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA | Premium Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#" class="logo">NOVA<span>.</span></a>
+
+```
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Shop</a>
+    <a href="#categories">Categories</a>
+</nav>
+
+<div class="nav-actions">
+    <button class="login-btn" onclick="showLogin()">Login</button>
+    <button class="login-btn" onclick="showRegister()">Register</button>
+    <button class="admin-btn" onclick="showAdminPanel()">Admin</button>
+    <button class="cart-btn" onclick="showCart()">
+        Bag <span id="cart-count">0</span>
+    </button>
+</div>
+```
+
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="eyebrow">THE NEW COLLECTION — 2026</span>
+        <h1>Elevate your<br>everyday<span>.</span></h1>
+        <p>Discover thoughtfully selected essentials designed to make every day extraordinary.</p>
+        <a href="#products" class="primary-btn">Explore Collection ↗</a>
+        <div class="hero-stats">
+            <div><strong>500+</strong><small>Products</small></div>
+            <div><strong>10k+</strong><small>Happy Customers</small></div>
+            <div><strong>4.9★</strong><small>Customer Rating</small></div>
+        </div>
+    </div>
+
+```
+<div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1000" alt="Premium headphones">
+    <div class="floating-card">
+        <span>FEATURED PRODUCT</span>
+        <strong>Studio Headphones</strong>
+        <b>₹2,499</b>
+    </div>
+</div>
+```
+
+</section>
+
+<section class="categories" id="categories">
+    <div>
+        <span class="eyebrow">CURATED FOR YOU</span>
+        <h2>Shop by category</h2>
+    </div>
+    <div class="category-list">
+        <button class="category active" onclick="filterProducts('All',this)">All Products</button>
+        <button class="category" onclick="filterProducts('Electronics',this)">Electronics</button>
+        <button class="category" onclick="filterProducts('Fashion',this)">Fashion</button>
+        <button class="category" onclick="filterProducts('Lifestyle',this)">Lifestyle</button>
+    </div>
+</section>
+
+<section class="products-section" id="products">
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">THE NOVA EDIT</span>
+            <h2>Featured products<span>.</span></h2>
+        </div>
+        <span class="product-count" id="product-count">06 PRODUCTS</span>
+    </div>
+
+```
+<div class="product-grid" id="product-grid"></div>
+```
+
+</section>
+
+<section class="newsletter">
+    <span class="eyebrow">STAY IN THE LOOP</span>
+    <h2>Good things are<br>coming your way.</h2>
+    <p>Discover new arrivals, exclusive offers and more.</p>
+    <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email address">
+        <button onclick="subscribe()">Join NOVA ↗</button>
+    </div>
+</section>
+
+<footer>
+    <a href="#" class="logo">NOVA<span>.</span></a>
+    <p>Designed for your everyday.</p>
+    <span>© 2026 NOVA Store. All rights reserved.</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
